@@ -40,6 +40,14 @@ CREATE TABLE titles (
 	PRIMARY KEY (title_id)
 );
 
+
+--DROP TABLE departments;
+--DROP TABLE titles;
+--DROP TABLE dept_emp;
+--DROP TABLE dept_manager;
+--DROP TABLE salaries;
+--DROP TABLE employees;
+
 --- Questions
 
 ---Q1
