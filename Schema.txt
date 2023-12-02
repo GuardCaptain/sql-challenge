@@ -1,0 +1,41 @@
+departments
+rel dept_emp
+rel dept_manager
+-
+dept_no VARCHAR PK FK >- dept_manager.dept_no
+dept_name STRING
+
+dept_emp
+rel employees
+rel salaries
+rel dept_manager
+-
+emp_no INT PK FK >- salaries.emp_no
+dept_no VARCHAR
+
+dept_manager
+-
+dept_no VARCHAR FK
+emp_no INT FK >- salaries.emp_no
+
+employees
+-
+emp_no INT PK
+emp_title STRING FK >- titles.title
+birth_date DATE
+first_name STRING
+last_name STRING
+sex STRING
+hire_date DATE
+
+salaries
+rel employees
+-
+emp_no INT PK FK >- employees.emp_no
+salary INT
+
+titles
+rel employees
+-
+title_id PK VARCHAR
+title STRING
