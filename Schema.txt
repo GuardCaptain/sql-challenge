@@ -22,11 +22,11 @@ employees
 -
 emp_no INT PK
 emp_title STRING FK >- titles.title
-birth_date DATE
+birth_date VARCHAR
 first_name STRING
 last_name STRING
 sex STRING
-hire_date DATE
+hire_date VARCHAR
 
 salaries
 rel employees
